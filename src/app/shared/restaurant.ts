@@ -1,10 +1,19 @@
+import Address from './address';
+import Grade from './grade';
+
 export default class Restaurant {
 
+  _id: string;
   name: string;
-  description: string;
+  cuisine: string;
+  borough: string;
+  address: Address;
 
-  constructor(name: string, description: string) {
+  constructor(name: string, cuisine: string, borough: string, address: Address) {
     this.name = name;
-    this.description = description;
+    this.cuisine = cuisine;
+    this.borough = borough;
+    this.address = address;
+
   }
 }

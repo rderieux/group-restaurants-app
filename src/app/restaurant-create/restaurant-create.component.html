@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="restaurant.name" placeholder="Name">
+<input type="text" [(ngModel)]="restaurant.cuisine" placeholder="Cuisine">
+<input type="text" [(ngModel)]="restaurant.borough" placeholder="City">
+<input type="text" [(ngModel)]="restaurant.address.building" placeholder="Street Number">
+<input type="text" [(ngModel)]="restaurant.address.street" placeholder="Street Name">
+<input type="text" [(ngModel)]="restaurant.address.zipcode" placeholder="Zip Code">
+<button (click)="onCreate(restaurant)">Save</button>
