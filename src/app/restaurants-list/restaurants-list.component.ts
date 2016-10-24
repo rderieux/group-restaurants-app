@@ -27,6 +27,10 @@ export class RestaurantsListComponent implements OnInit {
     this.selectedRestaurant = restaurant;
   }
 
+  onClickCreate() {
+
+  }
+
   onCloseClicked() {
     this.selectedRestaurant = null;
   }

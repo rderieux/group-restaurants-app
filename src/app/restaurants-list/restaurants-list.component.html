@@ -1,7 +1,11 @@
+<!--<pre>-->
+<!--{{ restaurants | json }}-->
+<!--</pre>-->
+
 <ul>
   <li *ngFor="let restaurant of restaurants">
-    <span>
-      <b><a (click)="onRestaurantSelected(restaurant)"></a> {{ restaurant.name }}</b>
+    <span (click)="onRestaurantSelected(restaurant)">
+      <b> {{ restaurant.name }}</b>
     </span>
   </li>
 </ul>
@@ -11,3 +15,5 @@
   <button class="btn btn-primary"
           (click)="onCloseClicked()">Close</button>
 </div>
+
+<!--<a [routerLink]="['/restaurants', 1]">Some Hero Here</a>-->

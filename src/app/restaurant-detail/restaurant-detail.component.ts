@@ -3,6 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
 import Restaurant from '../shared/restaurant';
+import Address from '../shared/address';
+import Grade from '../shared/grade';
 import RestaurantService from '../restaurant.service';
 
 @Component({

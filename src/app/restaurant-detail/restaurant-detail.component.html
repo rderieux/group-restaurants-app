@@ -1,3 +1,15 @@
-<p>
-  restaurant-detail works!
-</p>
+<div *ngIf="restaurant">
+  <h1>{{ restaurant.name }}</h1>
+  <h2>{{ restaurant.cuisine }}</h2>
+  <h2>{{ restaurant.borough }}</h2>
+  <h2>{{ restaurant.address.building }} {{ restaurant.address.street }} {{ restaurant.address.zipcode }}</h2>
+  <input type="text" [(ngModel)]="restaurant.name" placeholder="Name">
+  <input type="text" [(ngModel)]="restaurant.cuisine" placeholder="Cuisine">
+  <input type="text" [(ngModel)]="restaurant.borough" placeholder="City">
+  <input type="text" [(ngModel)]="restaurant.address.building" placeholder="Street Number">
+  <input type="text" [(ngModel)]="restaurant.address.street" placeholder="Street Name">
+  <input type="text" [(ngModel)]="restaurant.address.zipcode" placeholder="Zip Code">
+</div>
+<div>
+  <button (click)="onDelete(restaurant)">Delete</button>
+</div>
